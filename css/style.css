@@ -1,25 +1,28 @@
 @font-face {
-	 font-family: "OpenSans";  
+	 font-family: "OpenSans"; 
 	 src: url("../fonts/2211.ttf") format("truetype"); 
 	 font-style: normal; 
 	 font-weight: normal; 
 } 
 
- a, .lorem, .copy {
-	 font-family: "OpenSans";
-	 font-size: 10pt;
+ a, .text, .copy {
+	 font-family: "OpenSans", Arial, sans-serif;
+	 font-size: 13px;
 }
 
+body {
+	margin: 0;
+}
 
 ul {
 	 padding: 0;
 }
 
-body, .main, .wrapper, .footer {
+.wrapper, .main, .footer {
 	 margin: 0 auto;
 }
-
-body {
+	
+.wrapper {
 	 background-color: #f9f9f9;
 	 width: 1366px;
 	 height: 100%;
@@ -28,18 +31,15 @@ body {
 .main {
 	 width: 1060px;
 	 height: 100%;
-	 display: block;
 	 background-color: white;
 	 box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.3);
 }
 
-.wrapper {
-	 width: 968px;
-	 display: block;
-}
 
 .header {
 	 height: 170px;
+	 width: 968px;
+	 margin: 0 auto;
 }
 
 .logo {
@@ -71,7 +71,7 @@ body {
 	 line-height: 40px;
 	 text-align: center;
 	 text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-	 font-size: 11pt;
+	 font-size: 15px;
 }
 
 .menu ul li:first-child a {
@@ -79,12 +79,15 @@ body {
 	 padding-right: 61px;
 }
 
+.menu ul li:hover {
+	 background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+	 border-right: 1px solid #838383;
+	 border-left: 1px solid #838383;
+}
+
 .menu ul li:hover:first-child a {
 	 padding-left: 24px;
 	 padding-right: 60px;
-	 	 background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-	 border-right: 1px solid #838383;
-	 border-left: 1px solid #838383;
 }
 
 .menu ul li:nth-child(2) a {
@@ -93,9 +96,6 @@ body {
 
 .menu ul li:hover:nth-child(2) a {
 	 padding:0 23px;
-	 background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-	 border-right: 1px solid #838383;
-	 border-left: 1px solid #838383;
 }
 
 .menu ul li:nth-child(3) a {
@@ -104,9 +104,6 @@ body {
 
 .menu ul li:hover:nth-child(3) a {
 	 padding:0 54px;
-	 background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-	 border-right: 1px solid #838383;
-	 border-left: 1px solid #838383;
 }
 
 .menu ul li:last-child a {
@@ -115,14 +112,10 @@ body {
 
 .menu ul li:hover:last-child a {
 	 padding:0 30px;
-	 background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-	 border-right: 1px solid #838383;
-	 border-left: 1px solid #838383;
 }
 
 .container {
 	 width: 968px;
-	 margin-top: 40px;
 	 margin:40px auto 0;
 	}
 
@@ -146,7 +139,7 @@ body {
 	 margin: 0;
 }
 
-.left_menu ul li:nth-child(1) {
+.left_menu ul li:first-child {
 	border-top: none;
 }
 	 
@@ -173,10 +166,10 @@ body {
 
 .content img {
 	 display: block;
-	margin: 45px auto;
+	 margin: 45px auto;
 }
 
-.lorem {
+.text {
 	 width: 629px;
 	 margin: 40px 25px;
 	 float: right;
@@ -217,7 +210,6 @@ body {
 
 .copy {
 	 float: right;
-	 display: block;
 	 line-height: 40px;
 	 margin-right: 26px;
 	 text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
